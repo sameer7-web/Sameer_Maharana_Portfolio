@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sameer Maharana Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      type="application/atom+xml"
+      title="Atom"
+    />
+  </head>
+  <body class="overflow-x-hidden bg-black text-white">
+    <nav
+      class="w-full px-5 lg:px-8 lg:px[8%] py-4 flex items-center justify-between z-50"
+    >
+      <h1 class="text-3xl font-bold animate-text-color mr-14 animate-pulse text-blue-300">Captain</h1>
+      <ul
+        class="hidden border-2 border-blue-500 animate-pulse shadow-[0_0_10px_#3b82f6]
+ md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-black  text-white  bg-opacity-50"
+      >
+        <li><a class="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all after:duration-300"
+ href="#top">Home</a></li>
+        <li><a class="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all after:duration-300"
+ href="#about">About me</a></li>
+        <li><a class="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all after:duration-300"
+ href="#projects">Projects</a></li>
+        <li><a class="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all after:duration-300"
+ href="#contact">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+       
+        <a
+          href="#"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 relative border border-transparent hover:border-transparent hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-900 hover:bg-[length:100%_2px] hover:bg-no-repeat hover:bg-bottom transition-all duration-500 rounded-full ml-4"
+          >Resume<img src="./images/arrow-icon.png" class="w-3" alt=""
+        /></a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img
+            src="./images/menu-white.png"
+            class="w-6 cursor-pointer"
+            alt=""
+          />
+        </button>
+      </div>
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500"
+      >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img
+            src="./images/close-black.png"
+            class="w-5 cursor-pointer"
+            alt=""
+          />
+        </div> 
+        <li class="text-black"><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li class="text-black"><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li class="text-black"><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li class="text-black"><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--- header -->
+
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center"
+    >
+      <img src="./images/porfile.png" class="rounded-full w-32 border" alt="" />
+      <h3 class="flex item-end gap-2 text-xl md:text-2xl mb-3">
+        Hi! I'm Sameer Maharana
+        <img src="./images/hand-icon.png" class="w-6" alt="" />
+      </h3>
+      <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Frontend Developer</h1>
+
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-6">
+        <a
+          href="#contact"
+          class="px-10 py-3 border border-transparent rounded-full bg-blue-300 flex items-center text-black gap-2 hover:border-blue-500 hover:shadow-[0_0_15px_3px_rgba(59,130,246,0.7)] transition-all duration-300"
+"
+          >Contact me <img src="./images/right-arrow-white.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!--- about me-->
+
+    <div id="about" class="w-full px-[12%] py-10">
+      <h2 class="text-center text-5xl">About</h2>
+
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="./images/porfile-full.png"
+            class="w-64 sm:w-80 rounded-3xl border max-w-none"
+            alt=""
+          />
+
+          <div class="bg-gray-50 w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+            <img src="./images//circular-text.png" class="w-full" alt="">
+            <img src="./images/dev-icon.png" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
+
+          </div>
+        </div>
+        <div class="flex-1">
+          <p class="mb-10 max-w-2xl">
+            I am an experienced frontend Developer with over a past 2 years of
+            professional expertise in the field. Throughout my career, I have
+            had the privilege of collaborating with prestigious organizations,
+            contributing to their success and growth.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+              <img src="./images/code-icon.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-500">Languages</h3>
+              <p class="text-gray-600 text-sm">Html, Css, Javascript, Tailwindcss, React.js, Node.js</p>
+            </li>
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+              <img src="./images/edu-icon.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-500">Education</h3>
+              <p class="text-gray-600 text-sm">BCA-2024</p>
+            </li>
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+              <img src="./images/project-icon.png" class="w-7 mt-3" alt="" />
+              <h3 class="my-4 font-semibold text-gray-500">Experienced</h3>
+              <p class="text-gray-600 text-sm">1 year + experience in frontend development</p>
+            </li>
+          </ul>
+          <h4 class="my-6 text-white">Tools I Used</h4>
+          <ul class="flex items-center gap-3 sm:gap-5">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                <img src="./images/vscode.png" class="w-5 sm:w-7" alt="">
+            </li>
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                <img src="./images/figma.png" class="w-5 sm:w-7" alt="">
+            </li>
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                <img src="./images/git.png" class="w-5 sm:w-7" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+
+    <div id="projects">
+      <h2 class="text-center text-5xl">Projects</h2>
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+<ul class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mx-4 md:mx-10 max-w-7xl
+">
+           <li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://react-landing-page-ebon-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+    <img src="./images/project1.png" alt="">
+    <p class="flex justify-center font-bold p-3">Responsive Business Landing Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+ <li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://iphone-website-lovat.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+  <img src="./images/Project2.png" alt="">
+      <p class="flex justify-center font-bold p-3">Apple Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+ <li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://sameer7-web.github.io/Captain-Recipe-/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+    <img src="./images/Projectrecipe.png" alt="">
+      <p class="flex justify-center font-bold p-3">Recipe Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+<li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://sameer7-web.github.io/Expense-tracker/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+  <img src="./images/projectmoneytracker.png" alt="">
+      <p class="flex justify-center font-bold p-3">Expense tracker Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+<li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://sameer7-web.github.io/QR-generator/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+   <img src="./images/projectqrcode.png" alt="">
+      <p class="flex justify-center font-bold p-3">QR-code Generator Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+<li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <a href="https://sameer7-web.github.io/todo-list/" target="_blank" rel="noopener noreferrer" class="inline-block">
+  <div class="relative cursor-pointer group">
+    <img src="./images/projecttodolist.png" alt="">
+      <p class="flex justify-center font-bold p-3">Todo List Website</p>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center p-2.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+    >
+      Click to visit the website
+    </div>
+  </div>
+</a>
+</li>
+            
+            </ul>
+            </div>
+            </div>
+    </div>
+
+ <!--contact-->
+
+    <div id="contact" class="w-full px-[12%] py-20 scroll-mt-20">
+      <h2 class="text-center text-5xl">Contact</h2>
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-2-2xl mx-auto">
+
+           <input type="hidden" name="access_key" value="975341b5-6b9c-4043-b46f-e3cb75e88b6a">
+          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] bprder-gray-400 rounded-md text-black bg-white" required name="name">
+             <input type="email" placeholder="Enter your Email Id" class="flex-1 p-3 outline-none border-[0.5px] bprder-gray-400 rounded-md text-black bg-white" required name="email">
+          </div>
+          <textarea row="6" placeholder="Enter you message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md text-black bg-white mb-6" name="message" required></textarea>
+          <button class="py-3 px-8 w-max flex items-center justify-between rounded-full mx-auto border hover:border-blue-500 hover:shadow-[0_0_15px_3px_rgba(59,130,246,0.7)] transition-all duration-300 gap-2">Submit Now <img src="./images/right-arrow-white.png" alt=""></button>
+        </form>
+
+    </div>
+<!--footer-->
+<div class="mt-20">
+  <div class="text-center">
+<h1 class="w-36 mx-auto mb-2 text-3xl text-blue-300 font-bold">Captain</h1>
+<div class="w-max flex items-center gap-2 mx-auto">
+  <img src="./images/mail_icon_dark.png" class="w-6" alt="">
+  Sameermaharana1319@gmail.com
+
+</div>
+  </div>
+  <div class="text-center sm:flex items-center justify-around border-t border-gray-400 mx-[10%] my-12 py-6">
+<ul class="flex items-center gap-10 justify-between mt-4 sm:mt-0">
+  <li><a href="https://www.instagram.com/_sameer_maharana/profilecard/?igsh=MXNjdjhyaXI4ZzBw">Instagram</a></li>
+  <li><a href="https://github.com/sameer7-web">Github</a></li>
+  <li><a href="https://www.linkedin.com/in/sameer-maharana/">Linkedin</a></li>
+  <li><a href="https://x.com/Captain1319000?t=XdMZvRC8Pju5DwHfC9VNJQ&s=09">Twitter</a></li>
+</ul>
+</div>
+</div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
